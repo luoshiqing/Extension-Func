@@ -12,6 +12,8 @@
 		D60434791E8F535300E8D81B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60434771E8F535300E8D81B /* Main.storyboard */; };
 		D604347B1E8F535300E8D81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D604347A1E8F535300E8D81B /* Assets.xcassets */; };
 		D604347E1E8F535300E8D81B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D604347C1E8F535300E8D81B /* LaunchScreen.storyboard */; };
+		D604348A1E8F569800E8D81B /* LSQExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60434891E8F569800E8D81B /* LSQExtension.swift */; };
+		D604348F1E8F59E600E8D81B /* LSQFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604348E1E8F59E600E8D81B /* LSQFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		D604347A1E8F535300E8D81B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D604347D1E8F535300E8D81B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D604347F1E8F535300E8D81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60434851E8F537100E8D81B /* Swift3_1Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift3_1Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D60434891E8F569800E8D81B /* LSQExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSQExtension.swift; sourceTree = "<group>"; };
+		D604348E1E8F59E600E8D81B /* LSQFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSQFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +60,14 @@
 			isa = PBXGroup;
 			children = (
 				D60434731E8F535300E8D81B /* AppDelegate.swift */,
+				D60434891E8F569800E8D81B /* LSQExtension.swift */,
+				D604348E1E8F59E600E8D81B /* LSQFunc.swift */,
 				D60434751E8F535300E8D81B /* ViewController.swift */,
 				D60434771E8F535300E8D81B /* Main.storyboard */,
 				D604347A1E8F535300E8D81B /* Assets.xcassets */,
 				D604347C1E8F535300E8D81B /* LaunchScreen.storyboard */,
 				D604347F1E8F535300E8D81B /* Info.plist */,
+				D60434851E8F537100E8D81B /* Swift3_1Demo-Bridging-Header.h */,
 			);
 			path = Swift3_1Demo;
 			sourceTree = "<group>";
@@ -97,6 +105,7 @@
 					D604346F1E8F535300E8D81B = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = NP7D9SC777;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D604348F1E8F59E600E8D81B /* LSQFunc.swift in Sources */,
 				D60434761E8F535300E8D81B /* ViewController.swift in Sources */,
+				D604348A1E8F569800E8D81B /* LSQExtension.swift in Sources */,
 				D60434741E8F535300E8D81B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +272,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NP7D9SC777;
 				INFOPLIST_FILE = Swift3_1Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sql.Swift3-1Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift3_1Demo/Swift3_1Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +289,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NP7D9SC777;
 				INFOPLIST_FILE = Swift3_1Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sql.Swift3-1Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift3_1Demo/Swift3_1Demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
